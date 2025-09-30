@@ -1,12 +1,17 @@
 name: Deploy to Render
 
 on:
-    push:
-      branches:
-        - main
-    pull_request:
-      branches:
-        - main
+  push:
+    tags:
+      - 'v*'     # (3) Solo al crear tags tipo v1.2.3
+
+concurrency:
+  group: deploy-to-render-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
 
