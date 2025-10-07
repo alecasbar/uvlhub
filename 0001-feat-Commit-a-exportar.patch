@@ -1,0 +1,36 @@
+From 6988b3429ff7723688995037f031a245b3718f7b Mon Sep 17 00:00:00 2001
+From: OscarGomezGonzalezz <oscgomgon.business@gmail.com>
+Date: Tue, 7 Oct 2025 19:17:49 +0200
+Subject: [PATCH] feat: Commit a exportar
+
+---
+ archivo_nuevo.txt | 1 +
+ bugfix.patch      | 8 ++++++++
+ 2 files changed, 9 insertions(+)
+ create mode 100644 archivo_nuevo.txt
+ create mode 100644 bugfix.patch
+
+diff --git a/archivo_nuevo.txt b/archivo_nuevo.txt
+new file mode 100644
+index 0000000..41cd3f1
+--- /dev/null
++++ b/archivo_nuevo.txt
+@@ -0,0 +1 @@
++Este es un nuevo commit
+diff --git a/bugfix.patch b/bugfix.patch
+new file mode 100644
+index 0000000..cdd6afd
+--- /dev/null
++++ b/bugfix.patch
+@@ -0,0 +1,8 @@
++diff --git a/cambios_urgentes.txt b/cambios_urgentes.txt
++index 5853ce1..5666413 100644
++--- a/cambios_urgentes.txt
+++++ b/cambios_urgentes.txt
++@@ -1 +1,3 @@
++ Este es el archivo con el bug inicial.
+++La línea con el fix (Bug Solucionado)
+++Linea adicional para el parche
+-- 
+2.39.5 (Apple Git-154)
+
